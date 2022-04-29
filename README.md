@@ -1,7 +1,7 @@
 # BankingAPI
 by: Xing Tao Shi
 
-###	List of Endpoints
+## List of Endpoints
 
 #### GET: api/Customers
 Gets all Customers
@@ -18,7 +18,7 @@ Inserts a new Customer
 #### DELETE: api/Customers/{id}
 Deletes Customer by CustomerId
 
-###	Sample request bodies
+## Sample request bodies
 
 #### POST: api/Customers
 {
@@ -30,7 +30,7 @@ Deletes Customer by CustomerId
     }
 }
 
-###	Sample response body
+## Sample response body
 {
   "statusCode": 200,
   "statusDescription": "Call was successful. Returned existing customers.",
@@ -50,6 +50,6 @@ Deletes Customer by CustomerId
   ]
 }
 
-###	Changes Made
+## Changes Made
 The original idea was to have a one to many relationship between Customers and Transactions but for the sake of simplicity I changed it to one to one.
 Additionally, it didn't really make sense logically to have a PUT request because transactions should be immutable after being created.
