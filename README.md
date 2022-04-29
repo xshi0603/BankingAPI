@@ -3,24 +3,22 @@ by: Xing Tao Shi
 
 ## List of Endpoints
 
-#### GET: api/Customers
-Gets all Customers
+### GET: api/Customers
+- Gets all Customers
 
+### GET: api/Customers/{id}
+- Gets all Customers by CustomerId
 
-#### GET: api/Customers/{id}
-Gets all Customers by CustomerId
+### POST: api/Customers
+- Inserts a new Customer
 
-
-#### POST: api/Customers
-Inserts a new Customer
-
-
-#### DELETE: api/Customers/{id}
-Deletes Customer by CustomerId
+### DELETE: api/Customers/{id}
+- Deletes Customer by CustomerId
 
 ## Sample request bodies
 
 #### POST: api/Customers
+```
 {
     "FullName": "Xing Tao Shi",
     "Email": "xshi600@gmail.com",
@@ -29,8 +27,10 @@ Deletes Customer by CustomerId
         "Amount": 500.32
     }
 }
+```
 
 ## Sample response body
+```
 {
   "statusCode": 200,
   "statusDescription": "Call was successful. Returned existing customers.",
@@ -49,6 +49,7 @@ Deletes Customer by CustomerId
     }
   ]
 }
+```
 
 ## Changes Made
 The original idea was to have a one to many relationship between Customers and Transactions but for the sake of simplicity I changed it to one to one.
