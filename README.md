@@ -52,5 +52,5 @@ by: Xing Tao Shi
 ```
 
 ## Changes Made
-The original idea was to have a one to many relationship between Customers and Transactions but for the sake of simplicity I changed it to one to one.
-Additionally, it didn't really make sense logically to have a PUT request because transactions should be immutable after being created.
+- The original idea was to have a one to many relationship between Customers and Transactions but for the sake of simplicity I changed it to one to one.
+- Additionally, it didn't really make sense logically to have a PUT request because transactions should be immutable after being created.
