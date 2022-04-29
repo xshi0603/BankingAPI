@@ -1,18 +1,26 @@
 # BankingAPI
 by: Xing Tao Shi
 
-###	What are the different endpoints that a client can use? 
-##### GET: api/Customers
+###	List of Endpoints
+
+#### GET: api/Customers
 Gets all Customers
-##### GET: api/Customers/{id}
+
+
+#### GET: api/Customers/{id}
 Gets all Customers by CustomerId
-##### POST: api/Customers
+
+
+#### POST: api/Customers
 Inserts a new Customer
-##### DELETE: api/Customers/{id}
+
+
+#### DELETE: api/Customers/{id}
 Deletes Customer by CustomerId
 
-###	Sample request bodies, if applicable? 
-##### POST: api/Customers
+###	Sample request bodies
+
+#### POST: api/Customers
 {
     "FullName": "Xing Tao Shi",
     "Email": "xshi600@gmail.com",
@@ -22,7 +30,7 @@ Deletes Customer by CustomerId
     }
 }
 
-###	Sample response body? 
+###	Sample response body
 {
   "statusCode": 200,
   "statusDescription": "Call was successful. Returned existing customers.",
