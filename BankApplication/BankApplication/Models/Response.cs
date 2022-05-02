@@ -6,5 +6,6 @@
         public string? StatusDescription { get; set; }
         public Customer? Customer { get; set; }
         public List<Customer>? Customers { get; set; }
+        public List<Transaction>? Transactions { get; set; }
     }
 }

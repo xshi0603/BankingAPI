@@ -56,7 +56,6 @@ namespace BankApplication.Controllers
             // empty list
             else
             {
-                response.Customers = customers;
                 response.StatusCode = 400;
                 response.StatusDescription = "No existing customers. Please insert some first.";
             }
